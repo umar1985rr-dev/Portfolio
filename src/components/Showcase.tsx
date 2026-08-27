@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
+import oceanSpillImage from "@/Projects/1. OceanSpill.png";
 
 const techStack = [
   { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB", color: "#3776AB" },
@@ -34,10 +35,10 @@ const techStack = [
 // for adding projects in future, the code is pasted in whatsapp - 11.07.2026 ( Personal chat)
 const projects = [
   {
-    title: "upcoming",
-    tech: "#",
-    thumbnail: "#",
-    github: "#",},
+    title: "OceanSpill",
+    tech: "Python · FastAPI · React · PyTorch · Computer Vision · NumPy · Pandas · SQLAlchemy · Docker",
+    thumbnail: oceanSpillImage,
+    github: "https://github.com/umar1985rr-dev/OceanSpill.git",},
   {
     title: "upcoming",
     tech: "#",
