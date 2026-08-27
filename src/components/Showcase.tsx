@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import oceanSpillImage from "@/Projects/1. OceanSpill.png";
 
 const techStack = [
   { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB", color: "#3776AB" },
@@ -32,13 +31,24 @@ const techStack = [
   { name: "Git", icon: "https://cdn.simpleicons.org/git/F05032", color: "#F05032" }
 ];
 
+// for adding projects in future, the code is pasted in whatsapp - 11.07.2026 ( Personal chat)
 const projects = [
   {
-    title: "OceanSpill",
-    tech: "Python · React · FastAPI · PyTorch · NumPy · Pandas · OpenCV · SQLite · SQLAlchemy · Docker",
-    thumbnail: oceanSpillImage,
-    github: "https://github.com/umar1985rr-dev/OceanSpill",
-  },
+    title: "upcoming",
+    tech: "#",
+    thumbnail: "#",
+    github: "#",},
+  {
+    title: "upcoming",
+    tech: "#",
+    thumbnail: "#",
+    github: "#",},
+  {
+    title: "upcoming",
+    tech: "#",
+    thumbnail: "#",
+    github: "#",},
+  
 ];
 
 const certificates = [
@@ -80,39 +90,12 @@ function ProjectCard({ item }: { item: typeof projects[0] }) {
       <div className="relative h-48 overflow-hidden bg-white/5">
         <img
           src={item.thumbnail}
-<<<<<<< HEAD
-          alt={`${item.title} project preview`}
-=======
           alt={item.tech}
->>>>>>> origin/master
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-300" />
       </div>
-<<<<<<< HEAD
-      <div className="p-5 flex items-center justify-between gap-4">
-        <div>
-          <h2 className="text-sm font-semibold text-white">{item.title}</h2>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono">
-            {item.tech}
-          </span>
-        </div>
-        {item.github && (
-          <a
-            href={item.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open ${item.title} on GitHub`}
-            className="flex items-center justify-center w-8 h-8 rounded-full 
-            bg-white/5 border border-white/15 text-white/60 
-            hover:bg-white/10 hover:text-white hover:border-white/30 
-            transition-all duration-200 active:scale-95"
-          >
-            <GithubIcon />
-          </a>
-        )}
-=======
       <div className="p-5 flex items-center justify-between">
         <span className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono">
           {item.tech}
@@ -128,7 +111,6 @@ function ProjectCard({ item }: { item: typeof projects[0] }) {
         >
           <GithubIcon />
         </a>
->>>>>>> origin/master
       </div>
     </div>
   );
